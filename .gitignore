@@ -1,0 +1,18 @@
+# Global ignores
+node_modules/
+.env
+.DS_Store
+*.log
+
+# Frontend (Next.js) ignores
+toastd-frontend/.next/
+toastd-frontend/out/
+toastd-frontend/.env.local
+
+# Backend (Spring Boot) ignores
+ToastD-backend/target/
+ToastD-backend/.classpath
+ToastD-backend/.project
+ToastD-backend/.settings/
+ToastD-backend/.env
+ToastD-backend/*.iml
