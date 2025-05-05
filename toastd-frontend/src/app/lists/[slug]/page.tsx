@@ -2,9 +2,9 @@ import { ProductList } from "@/types";
 import ProductGrid from "@/components/ProductGrid";
 import Header from "@/components/Header";
 
-type Params = {
+type Params = Promise<{
   slug: string;
-};
+}>;
 
 // Function to fetch list data from the API
 async function getListData(slug: string): Promise<ProductList> {
