@@ -1,12 +1,12 @@
 import { Product } from "@/types";
-
+import Image from "next/image";
 interface Props {
   product: Product;
 }
 
 const ProductCard: React.FC<Props> = ({ product }) => (
   <div className=" border-2 rounded-lg p-4 shadow-md hover:shadow-xl transition">
-    <img
+     <Image
       src={product.imageUrl}
       alt={product.title}
       className="w-full  object-cover mb-4 rounded"
