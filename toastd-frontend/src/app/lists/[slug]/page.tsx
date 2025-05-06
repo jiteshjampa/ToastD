@@ -1,10 +1,11 @@
 import { ProductList } from "@/types";
 import ProductGrid from "@/components/ProductGrid";
 import Header from "@/components/Header";
-
-type Params = Promise<{
-  slug: string;
-}>;
+interface PageProps {
+  params: Promise<{
+    slug: string;
+  }>;
+}
 
 // Function to fetch list data from the API
 async function getListData(slug: string): Promise<ProductList> {
@@ -24,9 +25,9 @@ async function getListData(slug: string): Promise<ProductList> {
 }
 
 // Server Component
-export default async function ListPage({ params }: { params: Params }) {
+export default async function ListPage({ params }: { params: PageProps }) {
   // Await the params object first
-  const { slug }: {slug: string} =await params;
+  const { slug } =await params;
 
   // Fetch the list data with the awaited slug
   const data = await getListData(slug);
