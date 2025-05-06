@@ -1,8 +1,6 @@
-Here’s the updated `README.md` content with **detailed run commands** for both frontend and backend, including setup steps:
 
----
 
-```md
+
 # 🥂 ToastD – Curated Product Lists
 
 Welcome to **ToastD**, where we serve handpicked essentials for every hustle! ✨ This full-stack app features curated product lists built with **Spring Boot**, **Next.js**, and topped with a dash of **DevOps** deployment.
