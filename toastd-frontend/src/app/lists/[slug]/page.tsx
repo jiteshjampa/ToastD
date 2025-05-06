@@ -25,7 +25,7 @@ async function getListData(slug: string): Promise<ProductList> {
 }
 
 // Server Component
-export default async function ListPage({ params }: { params: PageProps }) {
+export default async function ListPage({ params }:  PageProps ) {
   // Await the params object first
   const { slug } =await params;
 
